@@ -27,9 +27,7 @@ steps:
   inputs:
     command: custom
     verbose: false
-    customCommand: 'run build'
-  env:
-    NODE_ENV: $(Temp_Env)
+    customCommand: 'run build-$(Temp_Env)'
 
 - task: ArchiveFiles@2
   displayName: Archive
