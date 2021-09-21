@@ -15,7 +15,7 @@ export default {
   data() {
     return { 
       envTest: process.env.VUE_APP_ENVTEST,
-      test: "prod 1.0"
+      test: "prod 2.0"
     }
   }
 }
