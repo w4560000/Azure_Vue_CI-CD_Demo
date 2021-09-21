@@ -15,12 +15,9 @@ export default {
   data() {
     return { 
       envTest: process.env.VUE_APP_ENVTEST,
-      test: "1.0"
+      test: "prod 1.0"
     }
-  },
-  created() {
-      console.log("123" + JSON.stringify(process.env))
-    }
+  }
 }
 </script>
 
