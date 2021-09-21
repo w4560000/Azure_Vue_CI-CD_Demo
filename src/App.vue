@@ -1,18 +1,26 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <br>
+    Vue環境 {{envTest}}
+    <br>
+    測試 {{test}}
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data() {
+    return { 
+      envTest: process.env.VUE_APP_ENVTEST,
+      test: "1.0"
+    }
+  },
+  created() {
+      console.log("123" + JSON.stringify(process.env))
+    }
 }
 </script>
 
