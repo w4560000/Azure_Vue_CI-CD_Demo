@@ -4,7 +4,6 @@
     <br>
     Vue環境 {{envTest}}
     <br>
-    測試 {{test}}
   </div>
 </template>
 
@@ -15,7 +14,6 @@ export default {
   data() {
     return { 
       envTest: process.env.VUE_APP_ENVTEST,
-      test: "prod 2.0"
     }
   }
 }
